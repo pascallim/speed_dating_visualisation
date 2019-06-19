@@ -9,5 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template('home.html')
 
+@app.route('/graph', methods=['GET'])
+def graph():
+    return render_template('graph.html')
+
+
 if __name__ == '__main__':
     app.run(port= 7000, debug=True)
