@@ -11,8 +11,4 @@ body {
   color: #444;
   background-color: #fffdfb;
   line-height: 1.5;
-  background-image: url("letter_love_img.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-attachment: fixed;
 }
