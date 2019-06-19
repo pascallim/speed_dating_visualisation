@@ -1,14 +1,12 @@
-/* The CSS file */
-@font-face{
-  font-family: Geosans;
-  src: url("GeosansLight.ttf")
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .05;
 }
-body {
-  margin: 0 auto;
-  width: 30%;
-  padding-top: 10%;
-  font-family: Geosans, "Helvetica Neue", Arial, sans-serif;
-  color: #444;
-  background-color: #fffdfb;
-  line-height: 1.5;
+.link:hover {
+  stroke-opacity: .5;
+}
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
 }
