@@ -1,3 +1,4 @@
+/* The CSS file */
 .link {
   fill: none;
   stroke: #000;
@@ -9,4 +10,17 @@
 .node text {
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
+}
+@font-face{
+  font-family: Geosans;
+  src: url("GeosansLight.ttf")
+}
+body {
+  margin: 0 auto;
+  width: 30%;
+  padding-top: 10%;
+  font-family: Geosans, "Helvetica Neue", Arial, sans-serif;
+  color: #444;
+  background-color: #fffdfb;
+  line-height: 1.5;
 }
