@@ -9,5 +9,14 @@ app = Flask(__name__)
 def index():
     return render_template('home.html')
 
+@app.route('/redirect_to_graph', methods=['POST'])
+def redirect_to_graph():
+    return redirect(url_for('graph'))
+
+@app.route('/graph', methods=['GET'])
+def graph():
+    return render_template('graph.html')
+
+
 if __name__ == '__main__':
     app.run(port= 7000, debug=True)
