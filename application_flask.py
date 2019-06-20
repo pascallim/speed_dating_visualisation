@@ -15,8 +15,7 @@ def redirect_to_graph():
 
 @app.route('/graph', methods=['GET'])
 def graph():
-    return render_template('graph.html')
-
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(port= 7000, debug=True)
