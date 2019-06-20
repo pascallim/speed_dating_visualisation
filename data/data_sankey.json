@@ -1,16 +1,16 @@
 {
 "nodes":[
-{"node":0,"name":"H - Race 1"},
-{"node":1,"name":"H - Race 2"},
-{"node":2,"name":"F - Race 1"},
-{"node":3,"name":"F - Race 2"},
-{"node":4,"name":"H - Race 3"},
-{"node":5,"name":"F - Race 3"}
+{"node":0,"name":"Race_1"},
+{"node":1,"name":"Race_2"},
+{"node":2,"name":"Race_3"},
+{"node":5,"name":"Race_1"},
+{"node":4,"name":"Race_2"},
+{"node":3,"name":"Race_3"}
 ],
 "links":[
-{"source":0,"target":2,"value":2},
-{"source":1,"target":2,"value":1},
+{"source":0,"target":5,"value":5},
+{"source":1,"target":5,"value":1},
 {"source":1,"target":3,"value":2},
-{"source":4,"target":2,"value":1},
-{"source":0,"target":5,"value":2}
+{"source":2,"target":4,"value":1},
+{"source":0,"target":4,"value":2}
 ]}
