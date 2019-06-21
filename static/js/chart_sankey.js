@@ -26,7 +26,11 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 // load the data
-d3.json({url_for('data', filename='data_sankey.json')}, function(error, graph) {
+// var data = "{{ url_for('data_function') }}" ;
+// data_function as a function in flask : ref (http://www.mydatastack.com/flaskd3part1)
+// d3.json(data}, function(error, graph) {
+// var data = "{{ url_for('static', filename='/data/data_sankey.json') }}" ;
+d3.json({{ data }}, function(error, graph) {
 
   // Constructs a new Sankey generator with the default settings.
   sankey

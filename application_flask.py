@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 
 from flask import Flask, render_template, session, request, redirect, flash, url_for
+import json
+import os
+
+# data_sankey = json.loads(open('static/data/data_sankey.json')).read()
 
 app = Flask(__name__)
 
@@ -15,7 +19,9 @@ def redirect_to_graph():
 
 @app.route('/graph', methods=['GET'])
 def graph():
-    return render_template('index.html')
+    with open('static/data/data_sankey.json') as f:
+        data_sankey = json.loads(f.read())
+    return render_template('index.html', data=data_sankey)
 
 if __name__ == '__main__':
     app.run(port= 7000, debug=True)
