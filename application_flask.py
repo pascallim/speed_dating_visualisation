@@ -19,11 +19,9 @@ def redirect_to_graph():
 
 @app.route('/graph', methods=['GET'])
 def graph():
-    with open('static/data/data_sankey.json') as f:
-        data_sankey = json.loads(f.read())
-    return render_template('index.html', data=data_sankey)
+    return render_template('index.html')
 
-@app.route('/getJson'):
+@app.route('/getJson')
 def getJson():
     with open('static/data/data_sankey.json') as f:
         data_sankey = json.loads(f.read())
