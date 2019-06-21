@@ -32,9 +32,9 @@ div.tooltip_node {
 div.tooltip_link {	
     position: absolute;			
     text-align: center;			
-    width: 80px;					
-    height: 28px;
-    padding: 2px;				
+    width: 250px;					
+    height: 100px;
+    padding: 10px;				
     font: 14px tahoma;		
     background: #fbf9fb;	
     border: 0px;		

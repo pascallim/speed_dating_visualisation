@@ -1,15 +1,14 @@
 {
 "nodes":[
-{"node": 0, "name": "Race_1"},
+{"node":0,"name":"Race_1"},
 {"node":1,"name":"Race_2"},
 {"node":2,"name":"Race_3"},
-{"node":5,"name":"Race_1"},
+{"node":3,"name":"Race_1"},
 {"node":4,"name":"Race_2"},
-{"node":3,"name":"Race_3"},
-{"node":6,"name":"Race_3"}
+{"node":5,"name":"Race_3"}
 ],
 "links":[
-{"source": 0,"target": 5,"value":5},
+{"source":0,"target":5,"value":5},
 {"source":1,"target":5,"value":1},
 {"source":1,"target":3,"value":2},
 {"source":2,"target":4,"value":1},

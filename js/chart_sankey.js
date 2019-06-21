@@ -12,9 +12,11 @@ var svg = d3.select("#my_dataviz").append("svg")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Color scale used
-var color = d3.scaleOrdinal(d3.schemeCategory20);
+// var color = d3.scaleOrdinal(d3.schemeCategory20); 
 var prevCol = "";
 var prevColR = "";
+var Color1_H = "#7aa5fa";
+
 
 // Text Scale
 var textScale = d3.scaleLinear()
@@ -37,7 +39,7 @@ var div_node = d3.select("body").append("div")
 
 
 // load the data
-d3.json("data/test.json", function(error, graph) {
+d3.json("data/data_sankey.json", function(error, graph) {
   
   // Constructs a new Sankey generator with the default settings.
   sankey
@@ -55,22 +57,20 @@ d3.json("data/test.json", function(error, graph) {
       .attr("d", sankey.link() )
       .style("stroke-width", function(d) { return Math.max(1, d.dy); })
       .sort(function(a, b) { return b.dy - a.dy; })
-	// .on("mouseover", function(){mouseOverLink(this);})
-    // .on("mouseover", function(d) {		
-		// div_link.transition()		
-			// .duration(200)		
-			// .style("opacity", .9);		
-		// div_link.html(d.name)	// define text of the tooltip
-			// .style("left", (d3.event.pageX) + "px")		
-			// .style("top", (d3.event.pageY - 28) + "px")
-	// })
-	.on("mouseover", function(){mouseOverLink(this);})
-	// .on("mouseout", function(d) {		
-		// div_link.transition()		
-			// .duration(500)
-			// .style("opacity", 0)
-	// });
-	.on("mouseout", linkMouseout);
+	  .on("mouseover", function(d) {		
+		div_link.transition()		
+			.duration(200)		
+			.style("opacity", .9);		
+		div_link.html(Math.round(d.value/d.source.value*100) + "% of the men in the <strong>"  +  d.source.name + "</strong> Category matched with " + Math.round(d.value/d.target.value*100) + "% of the women in the <strong>"  +  d.target.name + "</strong> Category.")	// define text of the tooltip
+			.style("left", (d3.event.pageX) + "px")		
+			.style("top", (d3.event.pageY - 28) + "px")
+		})
+	   .on("mouseout", function(d) {		
+		div_link.transition()		
+			.duration(500)
+			.style("opacity", 0)
+		
+		});
 
   // add in the nodes
   var node = svg.append("g")
@@ -91,22 +91,22 @@ d3.json("data/test.json", function(error, graph) {
       .attr("width", sankey.nodeWidth())
 	  .attr("rx", 4)
 	  .attr("ry", 4)
-      // .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
-      .style("fill", checkPositionAndColorize)
-	  // .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
-	  .on("mouseover", function(d) {		
-            div_node.transition()		
-                .duration(200)		
-                .style("opacity", .9);		
-            div_node.html(d.name)	// define text of the tooltip
-                .style("left", (d3.event.pageX) + "px")		
-                .style("top", (d3.event.pageY - 28) + "px")
-		})					
-	   .on("mouseout", function(d) {		
-			div_node.transition()		
-				.duration(500)
-				.style("opacity", 0)
-		});
+      .style("fill", checkPositionAndColorize); // Color
+	  // .on("mouseover", function(d) {		
+            // div_node.transition()		
+                // .duration(200)		
+                // .style("opacity", .9);		
+            // div_node.html(d.name)	// define text of the tooltip
+                // .style("left", (d3.event.pageX) + "px")		
+                // .style("top", (d3.event.pageY - 28) + "px")
+		// })		
+	   // .on("mouseover",nodeMouseover)
+	   // .on("mouseout", function(d) {		
+			// div_node.transition()		
+				// .duration(500)
+				// .style("opacity", 0)
+			// d3.select(this).style("fill", "#334594");
+		// });
 
   // add in the title for the nodes
 	textScale.domain(d3.extent(graph.nodes, function(d){return d.value;}));
@@ -160,27 +160,104 @@ d3.json("data/test.json", function(error, graph) {
 		  }
 	}
 	
-	function linkMouseout(){
-		d3.selectAll(".link").style("stroke-opacity", 0.05);
-		d3.select(".tooltip_link").style("display","none").style("z-index","-1");
+	function nodeMouseover(node, i){
+		// console.log(node.name);
+		var col = d3.select(this).style("fill");
+		console.log(col)
+		d3.selectAll(".link").style("stroke", col).style("stroke-opacity", 0.2);
+		d3.selectAll(".link").filter(function(d) { return d.source.name != graph.nodes[i].name && d.target.name != graph.nodes[i].name }).style("stroke-opacity", 0.0).style("stroke", "#000");
+		d3.select(this).style("fill", "#334594");
+		// d3.select(this.parentNode).moveToFront();
+		// this.__data__.targetLinks.sort(function(a,b){
+		  // return parseFloat(b.value) - parseFloat(a.value);
+		// });
+
+		// this.__data__.sourceLinks.sort(function(a,b){
+		  // return parseFloat(b.value) - parseFloat(a.value);
+		// });
+
+
+		// var thiz = this.__data__;
+		// var targetData = "";
+		// var testArray = [];
+		// for (var i = 0; i < this.__data__.targetLinks.length; i++){
+		  // var objToPush = {};
+		  // objToPush[this.__data__.targetLinks[i].source.name] = this.__data__.targetLinks[i].value;
+		  // testArray.push(objToPush);
+		// }
+		// var newTarData = combineKeyData(testArray.slice(0, 10));
+		// for (var prprt in newTarData){
+		  // targetData += "<tr><td class='cou-name'>" + prprt + " : </td><td class='cou-val'>" + formatNumber(newTarData[prprt]) + "</td></tr>";
+		// }
+		  
+		// var sourceData = "";
+		// var newArray = [];
+		// for (var z = 0; z < this.__data__.sourceLinks.length; z++){
+		  // var srcObjToPush = {};
+		  // srcObjToPush[this.__data__.sourceLinks[z].target.name] = this.__data__.sourceLinks[z].value;
+		  // newArray.push(srcObjToPush);
+		// }
+		// var newSrcData = combineKeyData(newArray.slice(0, 10));
+		// for (var proprt in newSrcData){
+		  // sourceData += "<tr><td class='cou-name'>" + proprt + " : </td><td class='cou-val'>" + formatNumber(newSrcData[proprt]) + "</td></tr>";
+		// }
+
+		// var tipText = "";
+		// if (this.__data__.targetLinks.length>0){
+		  // tipText = targetData;
+		// }
+		// else {tipText = sourceData;}
+
+		// var eX = this.__data__.x;
+		// var plchldrWidth = $(".l-box.asylumseekers.chart").width();
+		// var tipPos = getTopLeft(thiz.type_id, "tooltip", d3.event);
+		// var marLeft = parseInt($("#chart").css('margin-left'));
+		// var chartWidth = $("#chart").width();
+
+		// if(eX == 0 && width > 525){
+		  // eX = 0 - marLeft;
+		// }
+		// else if(eX == 0 && width <= 525){
+		  // eX = 25;
+		// }
+		// else if(eX !== 0 && width < 525){
+		  // eX = width - $(".sank_tooltip").width() - 45;
+		// }
+		// else{
+		  // var tipWidth = $(".sank_tooltip").width();//(d3.select(".sank_tooltip").style("width")).replace(/\px/g, '');
+		  // eX= chartWidth;//plchldrWidth - tipWidth - marLeft - (plchldrWidth*10/100);      
+		// }
+
+		// var heightSum = tipPos.top + $(".sank_tooltip").height();
+		// var tipTop;
+		// d3.select("#sank_" + continentStrip(node.name)).select("rect")[0][0].__data__.y < 405 ?
+		// tipTop = d3.select("#sank_" + node.name).select("rect")[0][0].__data__.y + (d3.select("#sank_" + node.name).select("rect")[0][0].__data__.dy/2) :
+		// tipTop = 400;
+
+		// d3.select(".sank_tooltip").style("top",tipTop + "px").style("left",eX+"px").style("display","block").style("background-color","rgba(255,255,255,0.96)").style("z-index","5");
+		// d3.select(".tooltip-country").text(this.__data__.name).style("color", col);
+		
+		// if(this.__data__.targetLinks.length > 0){
+		  // d3.select(".tooltip-value").html("<strong>" + formatNumber(this.__data__.value) + "</strong>" + " people have asked for asylum in " + "<strong>" + this.__data__.name + "</strong>" + ".</br></br>" + "<strong>Top countries</strong>");
+		// }
+		// else{
+		  // d3.select(".tooltip-value").html("<strong>" + formatNumber(this.__data__.value) + "</strong>" + " people have asked for asylum in other countries" + ".</br></br>" + "<strong>Top countries</strong>");
+		// }
+		// d3.select(".data-table").html(tipText).style("color", "rgba(51,51,51,.9");
+  
+	}
+	function nodeMouseout(){
+		d3.selectAll(".link").style("stroke-opacity", 0.05).style("stroke", "#000");
+		d3.select(this).style("display","none").style("z-index","-1");
     }
-	function mouseOverLink(obj){
-		d3.select(obj).style("stroke-opacity", 0.5);
-		var tipPos = getTopLeft(obj.id, null, d3.event);
-		var heightSum = tipPos.top + 50 + $(".tooltip_link").height();
-		var tipTop;
-		heightSum > $("#chart").height() ? tipTop = tipPos.top - (heightSum - $("#chart").height()) - 50 : tipTop = tipPos.top + 50;
-		var plchldrWidth = $(".l-box.asylumseekers.chart").width()/2;
-		var marLeft = parseInt($("#chart").css('margin-left'));
-		d3.select(".tooltip_link").style("top",tipTop +"px").style("left",plchldrWidth - 120 - marLeft +"px").style("display","block").style("background-color","rgba(255,255,255,.9)").style("z-index","5").html("<strong>" + formatNumber(obj.__data__.value) + "</strong>" + " people from " + "<strong>" + obj.__data__.source.name + "</strong>" + " asked for asylum in " + "<strong>" + obj.__data__.target.name + "</strong>");
-    }
+
 	function getTopLeft(id, className, event){
 		var ttid;
 		if(className){
 		  ttid = "."+ className;
 		}
 		else { ttid = "#"+ id; }
-		var offset = $("#chart").offset();
+		var offset = $("#my_dataviz").offset();
 		var tipPosition = {"top": event.pageY - offset.top, "left": 0};
 		return tipPosition;
 	}
