@@ -23,5 +23,11 @@ def graph():
         data_sankey = json.loads(f.read())
     return render_template('index.html', data=data_sankey)
 
+@app.route('/getJson'):
+def getJson():
+    with open('static/data/data_sankey.json') as f:
+        data_sankey = json.loads(f.read())
+    return data_sankey
+
 if __name__ == '__main__':
     app.run(port= 7000, debug=True)

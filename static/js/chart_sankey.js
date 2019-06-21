@@ -30,7 +30,7 @@ var div = d3.select("body").append("div")
 // data_function as a function in flask : ref (http://www.mydatastack.com/flaskd3part1)
 // d3.json(data}, function(error, graph) {
 // var data = "{{ url_for('static', filename='/data/data_sankey.json') }}" ;
-d3.json({{ data }}, function(error, graph) {
+d3.json("/getJson", function(error, graph) {
 
   // Constructs a new Sankey generator with the default settings.
   sankey
