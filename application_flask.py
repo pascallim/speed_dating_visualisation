@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, session, request, redirect, flash, url_for
+from flask import Flask, render_template, session, request, redirect, flash, url_for, Response
 import json
 import os
 
@@ -25,7 +25,9 @@ def graph():
 def getJson():
     with open('static/data/data_sankey.json') as f:
         data_sankey = json.loads(f.read())
-    return data_sankey
+    print(data_sankey)
+    response = Response(response=data_sankey, status=200, mimetype="application/json")
+    return response
 
 if __name__ == '__main__':
     app.run(port= 7000, debug=True)
