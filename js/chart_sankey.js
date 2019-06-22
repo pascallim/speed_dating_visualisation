@@ -39,7 +39,7 @@ var div_node = d3.select("body").append("div")
 
 
 // load the data
-d3.json("data/test.json", function(error, graph) {
+d3.json("data/data_sankey.json", function(error, graph) {
   
   // Constructs a new Sankey generator with the default settings.
   sankey
