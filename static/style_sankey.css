@@ -16,14 +16,15 @@
 }
 
 div.tooltip_node {	
-    position: absolute;			
+    position: aboslute;
+	/* left: 20px; */
+	top: 50px;
     text-align: center;			
     width: 170;					
-    height: 200px;
+    height: 40px;
     padding: 10px;				
-    font: 14px tahoma;
-	font-weight: bold;	
-    background: #fbf9fb;	
+    font: 14px tahoma;	
+    background: #f4f4f4;	
     border: 0px;		
     border-radius: 0px;			
     pointer-events: none;
