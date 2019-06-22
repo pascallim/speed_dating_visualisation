@@ -1,29 +1,44 @@
 .link {
   fill: none;
   stroke: #000;
-  stroke-opacity: .03;
+  stroke-opacity: .1;
 }
 .link:hover {
   stroke-opacity: .4;
 }
 .node text {
   pointer-events: none;
-  font: 16px tahoma;
+  font: 8px tahoma;
 }
 
 .node rect {
 	border-radius: 50px;	
 }
 
-div.tooltip {	
+div.tooltip_node {	
+    position: aboslute;
+	/* left: 20px; */
+	top: 50px;
+    text-align: center;			
+    width: 170;					
+    height: 40px;
+    padding: 10px;				
+    font: 14px tahoma;	
+    background: #f4f4f4;	
+    border: 0px;		
+    border-radius: 0px;			
+    pointer-events: none;
+}
+
+div.tooltip_link {	
     position: absolute;			
     text-align: center;			
-    width: 80px;					
-    height: 28px;
-    padding: 2px;				
+    width: 250px;					
+    height: 100px;
+    padding: 10px;				
     font: 14px tahoma;		
-    background: #F5F5F5;	
+    background: #fbf9fb;	
     border: 0px;		
-    border-radius: 2px;			
+    border-radius: 0px;			
     pointer-events: none;
 }
