@@ -1,16 +1,36 @@
 <!DOCTYPE html>
+<head>
 <meta charset="utf-8">
-
+<link rel="stylesheet" type="text/css" href="/static/style_sankey.css">
+</head>
+<body>
+<!-- Create a div where the graph will take place -->
+<select id="category_H" class="category"	name="category_H">
+	<option value="Ethnie">Ethnie</option>
+	<option value="Localisation">Localisation</option>
+	<option value="Etude">Etude</option>
+	<option value="Carrière">Carrière</option>
+	<option value="Objectif">Objectif</option>
+</select>
+<select id="category_F" class="category"	name="category_F">
+	<option value="Ethnie">Ethnie</option>
+	<option value="Localisation">Localisation</option>
+	<option value="Etude">Etude</option>
+	<option value="Carrière">Carrière</option>
+	<option value="Objectif">Objectif</option>
+</select>
+<div id="my_dataviz">
+</div>
 <!-- Load d3.js -->
 <script src="js/d3/d3.min.js"></script>
-
+<!-- Load JQuery -->
+<script src="js/jquery-3.4.1.js"></script>
 <!-- Load the sankey.js function -->
 <script src="js/sankey.js"></script>
-
-<!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
-
-<link rel="stylesheet" type="text/css" href="/static/style_sankey.css">
-
 <!-- Load the chart_sankey.js function -->
 <script src="js/chart_sankey.js"></script>
+
+</body>
+
+
+

@@ -1,41 +1,3 @@
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 600 - margin.left - margin.right,
-    height = 650 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
-
-// Color scale used
-var prevCol = "";
-var prevColR = "";
-var click = 0;
-var color_click = "rgb(95, 101, 112)";
-var node_click = 0;
-
-// Text Scale
-var textScale = d3.scaleLinear()
-    .range([70, 115]);
-
-// Set the sankey diagram properties
-var sankey = d3.sankey()
-    .nodeWidth(25)
-    .nodePadding(1)
-    .size([width, height]);
-	
-// Define the div for the tooltip
-var div_link = d3.select("body").append("div")	
-    .attr("class", "tooltip_link")				
-    .style("opacity", 0);
-var div_node = d3.select("body").append("div")	
-    .attr("class", "tooltip_node")				
-    .style("opacity", 0);
-
 var dico_from = {0: "UNCC",
  1: "Minnesota",
  2: "New Jersey",
@@ -268,261 +230,321 @@ var dico_from = {0: "UNCC",
  229: "MD",
  230: "Westchester, NY"};
 var dico_race = {1 : "Black/African American",
-             2 : "European/Caucasian-American",
-             3 : "Latino/Hispanic American",
-             4 : "Asian/Pacific Islander/Asian-American",
-             5 : "Native American",
-             6 : "Other"};
+			 2 : "European/Caucasian-American",
+			 3 : "Latino/Hispanic American",
+			 4 : "Asian/Pacific Islander/Asian-American",
+			 5 : "Native American",
+			 6 : "Other"};
 var dico_career = {1 : "Lawyer",
-            2: "Academic/Research",
-            3: "Psychologist",
-            4: "Doctor/Medicine",
-            5: "Engineer",
-            6: "Creative Arts/Entertainment",
-            7: "Banking/Consulting/Finance/Marketing/Business/CEO/Entrepreneur/Admin",
-            8: "Real Estate",
-            9: "International/Humanitarian Affairs",
-            10: "Undecided",
-            11:"Social Work",
-            12:"Speech Pathology",
-            13:"Politics",
-            14:"Pro sports/Athletics",
-            15:"Other",
-            16:"Journalism",
-            17:"Architecture"};
+			2: "Academic/Research",
+			3: "Psychologist",
+			4: "Doctor/Medicine",
+			5: "Engineer",
+			6: "Creative Arts/Entertainment",
+			7: "Banking/Consulting/Finance/Marketing/Business/CEO/Entrepreneur/Admin",
+			8: "Real Estate",
+			9: "International/Humanitarian Affairs",
+			10: "Undecided",
+			11:"Social Work",
+			12:"Speech Pathology",
+			13:"Politics",
+			14:"Pro sports/Athletics",
+			15:"Other",
+			16:"Journalism",
+			17:"Architecture"};
 var dico_goal = {1 : "Seemed like a fun night out",
-             2 : "To meet new people",
-             3 : "To get a date",
-             4 : "Looking for a serious relationship",
-             5 : "To say I did it",
-             6 : "Other"};
+			 2 : "To meet new people",
+			 3 : "To get a date",
+			 4 : "Looking for a serious relationship",
+			 5 : "To say I did it",
+			 6 : "Other"};
 var dico_field = {1: "Law",
-            2: "Math",
-            3: "Social Science, Psychologist",
-            4: "Medical Science, Pharmaceuticals, and Bio Tech",
-            5: "Engineering",
-            6: "English/Creative Writing/ Journalism",
-            7: "History/Religion/Philosophy",
-            8: "Business/Econ/Finance",
-            9: "Education, Academia",
-            10: "Biological Sciences/Chemistry/Physics",
-            11: "Social Work",
-            12: "Undergrad/undecided",
-            13:"Political Science/International Affairs",
-            14:"Film",
-            15:"Fine Arts/Arts Administration",
-            16:"Languages",
-            17:"Architecture",
-            18:"Other"};
+			2: "Math",
+			3: "Social Science, Psychologist",
+			4: "Medical Science, Pharmaceuticals, and Bio Tech",
+			5: "Engineering",
+			6: "English/Creative Writing/ Journalism",
+			7: "History/Religion/Philosophy",
+			8: "Business/Econ/Finance",
+			9: "Education, Academia",
+			10: "Biological Sciences/Chemistry/Physics",
+			11: "Social Work",
+			12: "Undergrad/undecided",
+			13:"Political Science/International Affairs",
+			14:"Film",
+			15:"Fine Arts/Arts Administration",
+			16:"Languages",
+			17:"Architecture",
+			18:"Other"};
 var dico_global = {"race": dico_race, "goal": dico_goal, "field_cd": dico_field, "from": dico_from, "career_c": dico_career};
+var dico_name = {"Ethnie": "race", "Localisation": "from", "Etude": "field_cd", "Carrière": "career_c", "Objectif": "goal"}
 
-var dataset = "";
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+	width = 600 - margin.left - margin.right,
+	height = 650 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz").append("svg")
+	.attr("width", width + margin.left + margin.right)
+	.attr("height", height + margin.top + margin.bottom)
+  .append("g")
+	.attr("transform",
+		  "translate(" + margin.left + "," + margin.top + ")");
+
+// Text Scale
+var textScale = d3.scaleLinear()
+	.range([90, 110]);
+
+// Set the sankey diagram properties
+var sankey = d3.sankey()
+	.nodeWidth(25)
+	.nodePadding(1)
+	.size([width, height]);
 	
-// Load data and process
-// d3.csv("data/df_sankey.csv", function(d){
-	// console.log(d);
-	// function(d) {return d.career_c_H;};
-	// console.log(data[0])
-	// console.log(data["key_date"]);
-	// dataset = data;
-// });
-// var expensesCount = d3.nest()
-  // .key(function(d) { return d.career_c_H; })
-  // .key(function(d) { return d.name; })
-  // .rollup(function(v) { return v.length; })
-  // .entries(dataset);
-  
-// console.log(expensesCount);
-// def initialize_data(attribute_H, attribute_F, df=df_res, dico=dico_global):
-    
-    // df_attribute = df.groupby([attribute_H + "_H", attribute_F + "_F"]).count()
-    // # INITIALIZATION
-    // dico_nodes_H = {}
-    // dico_nodes_F = {}
-    // for i, node in enumerate(df_attribute.index.levels[0].tolist()):
-        // dico_nodes_H[node] = i
-    // offset = len(dico_nodes_H.keys())
-    // for i, node in enumerate(df_attribute.index.levels[1].tolist()):
-        // dico_nodes_F[node] = i + offset
-    // # NODES
-    // nodes = []
-    // dico_code_to_name_H = dico_global[attribute_H]
-    // dico_code_to_name_F = dico_global[attribute_F]
-    // for node in dico_nodes_H.keys():
-        // nodes.append({"node":dico_nodes_H[node], "name":dico_code_to_name_H[node]})
-    // for node in dico_nodes_F.keys():
-        // nodes.append({"node":dico_nodes_F[node], "name":dico_code_to_name_F[node]})
-    // # LINKS
-    // list_links = df_attribute.index.values
-    // links = []
-    // for i, link in enumerate(list_links):
-        // links.append({"source":dico_nodes_H[link[0]], "target":dico_nodes_F[link[1]], "value": int(df_attribute.iloc[i,0])})
-    // return nodes, links
+// Define the div for the tooltip
+var div_link = d3.select("body").append("div")	
+	.attr("class", "tooltip_link")				
+	.style("opacity", 0);
+var div_node = d3.select("body").append("div")	
+	.attr("class", "tooltip_node")				
+	.style("opacity", 0);
 
-// load the data
-d3.json("data/data_sankey.json", function(error, graph) {
-  
-  // Constructs a new Sankey generator with the default settings.
-  sankey
-      .nodes(graph.nodes)
-      .links(graph.links)
-      .layout(0);
-
-  // add in the links
-  var link = svg.append("g")
-    .selectAll(".link")
-    .data(graph.links)
-    .enter()
-    .append("path")
-      .attr("class", "link")
-      .attr("d", sankey.link() )
-      .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-      .sort(function(a, b) { return b.dy - a.dy; })
-	  .on("mouseover", function(d) {
-		if (d.source.node==node_click && click==1) {
-			div_link.transition()		
-				.duration(200)		
-				.style("opacity", .9);		
-			div_link.html(Math.round(d.value/d.source.value*100) + "% of the men in the <strong>"  +  d.source.name + "</strong> Category matched with " + Math.round(d.value/d.target.value*100) + "% of the women in the <strong>"  +  d.target.name + "</strong> Category.")	// define text of the tooltip
-				.style("left", (d3.event.pageX) + "px")		
-				.style("top", (d3.event.pageY - 28) + "px")
-		} else if (click==0) {
-			div_link.transition()		
-				.duration(200)		
-				.style("opacity", .9);		
-			div_link.html(Math.round(d.value/d.source.value*100) + "% of the men in the <strong>"  +  d.source.name + "</strong> Category matched with " + Math.round(d.value/d.target.value*100) + "% of the women in the <strong>"  +  d.target.name + "</strong> Category.")	// define text of the tooltip
-				.style("left", (d3.event.pageX) + "px")		
-				.style("top", (d3.event.pageY - 28) + "px")
-		}
-		// d3.selectAll(".link").filter(function(d) { return d.source.node != graph.nodes[i].node && d.target.node != graph.nodes[i].node })
-	  })
-	  .on("mouseout", function(d) {		
-		div_link.transition()		
-			.duration(500)
-			.style("opacity", 0)
+// For First Construction
+var e_H = document.getElementById("category_H");
+var e_F = document.getElementById("category_F");
+var selectedCategory_H = e_H.options[e_H.selectedIndex].text;
+var selectedCategory_F = e_F.options[e_F.selectedIndex].text;	
+	
+// Construct Sankey
+constructSankey (dico_name[selectedCategory_H], dico_name[selectedCategory_F])
+	
+// Modify Sankey
+$( "select" )
+  .change(function () {
+	var selectedCategory_H = e_H.options[e_H.selectedIndex].text;
+	var selectedCategory_F = e_F.options[e_F.selectedIndex].text;
+	d3.selectAll(".link").remove();
+	d3.selectAll(".node").remove();
+	constructSankey(dico_name[selectedCategory_H], dico_name[selectedCategory_F]);
+   });
+	
+// Function to construct Sankey
+function constructSankey (attribute_H, attribute_F){
+	// Variables initialization
+	var prevCol = "";
+	var prevColR = "";
+	var click = 0;
+	var color_click = "rgb(95, 101, 112)";
+	var node_click = 0;
+	var node_selected;
+	var graph = {"nodes" : [], "links" : []};
+	
+	// Load data and process
+	d3.csv("data/df_sankey.csv", function(error, data){
+		
+		// INITIALIZE THE NODES
+		var category_H = attribute_H
+		var category_F = attribute_F
+		var dico_code_to_node_H = {};
+		var dico_code_to_node_F = {};
+		var dico_code_to_name_H = dico_global[category_H];
+		var dico_code_to_name_F = dico_global[category_F];
+		// var data_nodes = [];
+		var offset = 0;
+		var data_groupby_H = d3.nest()
+		  .key(function(d) { return d[category_H+"_H"]; })
+		  .rollup(function(v) { return v.length; })
+		  .entries(data);
+		var data_groupby_F = d3.nest()
+		  .key(function(d) { return d[category_F+"_F"]; })
+		  .rollup(function(v) { return v.length; })
+		  .entries(data);
+		// CREATE NODES FOR MEN
+		data_groupby_H.forEach(function(item, index, array) {
+		  dico_code_to_node_H[item.key] = index;
+		  graph.nodes.push({"node":+index, "name":dico_code_to_name_H[item.key]})
+		  offset = index+1;
 		});
+		// CREATE NODES FOR WOMEN
+		data_groupby_F.forEach(function(item, index, array) {
+		  dico_code_to_node_F[item.key] = index + offset;
+		  graph.nodes.push({"node":+index+offset, "name":dico_code_to_name_F[item.key]})
+		});
+		// LINKS
+		var source = "";
+		var data_groupby = d3.nest()
+		  .key(function(d) { return d[category_H+"_H"]; })
+		  .key(function(d) { return d[category_F+"_F"]; })
+		  .rollup(function(v) { return v.length; })
+		  .entries(data);
+		data_groupby.forEach(function(item, index, array) {
+			source = item.key 
+			item.values.forEach(function(item, index, array) {
+			  graph.links.push({"source":+dico_code_to_node_H[source], "target":+dico_code_to_node_F[item.key], "value": +item.value})
+			});
+		});
+		// Constructs a new Sankey generator with the default settings.
+		sankey
+		  .nodes(graph.nodes)
+		  .links(graph.links)
+		  .layout(0);
+		
+		// add in the links
+		  var link = svg.append("g")
+			.selectAll(".link")
+			.data(graph.links)
+			.enter()
+			.append("path")
+			  .attr("class", "link")
+			  .attr("d", sankey.link() )
+			  .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+			  .sort(function(a, b) { return b.dy - a.dy; })
+			  .on("mouseover", function(d) {
+				if ((d.source.node==node_selected||d.target.node==node_selected) && click==1) {
+					div_link.transition()		
+						.duration(200)		
+						.style("opacity", .9);		
+					div_link.html(Math.round(d.value/d.source.value*100) + "% of the men in the <strong>"  +  d.source.name + "</strong> Category matched with " + Math.round(d.value/d.target.value*100) + "% of the women in the <strong>"  +  d.target.name + "</strong> Category.")	// define text of the tooltip
+						.style("left", (d3.event.pageX) + "px")		
+						.style("top", (d3.event.pageY - 28) + "px")
+				} else if (click==0) {
+					div_link.transition()		
+						.duration(200)		
+						.style("opacity", .9);		
+					div_link.html(Math.round(d.value/d.source.value*100) + "% of the men in the <strong>"  +  d.source.name + "</strong> Category matched with " + Math.round(d.value/d.target.value*100) + "% of the women in the <strong>"  +  d.target.name + "</strong> Category.")	// define text of the tooltip
+						.style("left", (d3.event.pageX) + "px")		
+						.style("top", (d3.event.pageY - 28) + "px")
+				}
+			  })
+			  .on("mouseout", function(d) {		
+				div_link.transition()		
+					.duration(500)
+					.style("opacity", 0)
+			   });
+		// add in the nodes
+	  var node = svg.append("g")
+		.selectAll(".node")
+		.data(graph.nodes.sort(function (a,b) {return d3.ascending(a.value, b.value); }))
+		.enter().append("g")
+		  .attr("class", "node")
+		  .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
-  // add in the nodes
-  var node = svg.append("g")
-    .selectAll(".node")
-	.data(graph.nodes.sort(function (a,b) {return d3.ascending(a.value, b.value); }))
-    .enter().append("g")
-      .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-
-  // add the rectangles for the nodes
-  node
-    .append("rect")	
-      .attr("height", function(d) { return d.dy; })
-      .attr("width", sankey.nodeWidth())
-	  .attr("rx", 4)
-	  .attr("ry", 4)
-      .style("fill", checkPositionAndColorize) // Color
-	  .on("click", function(d, i) {
-			if (click == 0) {
-				// Reset Colors
-				prevCol = ""
-				prevColR = ""
-				d3.selectAll("rect").style("fill", checkPositionAndColorize)
-				// Change color
-				d3.select(this).style("fill", color_click)
-				// Show only this node links
-				d3.selectAll(".link").style("stroke", "#000").style("stroke-opacity", 0.3)
-				d3.selectAll(".link").filter(function(d) { return d.source.node != graph.nodes[i].node && d.target.node != graph.nodes[i].node }).style("stroke-opacity", 0.0).style("stroke", "#000")
-				// Change state value
-				click = 1
-			} else if (click == 1) {
-				if (d3.select(this).style("fill") == color_click){
+	  // add the rectangles for the nodes
+	  node
+		.append("rect")	
+		  .attr("height", function(d) { return d.dy; })
+		  .attr("width", sankey.nodeWidth())
+		  .attr("rx", 4)
+		  .attr("ry", 4)
+		  .style("fill", checkPositionAndColorize) // Color
+		  .on("click", function(d, i) {
+				node_selected = d.node;
+				console.log(node_selected);
+				if (click == 0) {
 					// Reset Colors
 					prevCol = ""
 					prevColR = ""
 					d3.selectAll("rect").style("fill", checkPositionAndColorize)
-					// Show all nodes
-					d3.selectAll(".link").style("stroke-opacity", 0.1).style("stroke", "#000");
-					// Change state value
-					click = 0
-					// alert(d3.select(this.parentNode).name)
-					// console.log(node_click)
-				} else {
-					// Reset Colors
-					prevCol = ""
-					prevColR = ""
-					d3.selectAll("rect").style("fill", checkPositionAndColorize)
-					// Set color
+					// Change color
 					d3.select(this).style("fill", color_click)
-					// Show all nodes
-					d3.selectAll(".link").style("stroke-opacity", 0.1).style("stroke", "#000");
 					// Show only this node links
 					d3.selectAll(".link").style("stroke", "#000").style("stroke-opacity", 0.3)
 					d3.selectAll(".link").filter(function(d) { return d.source.node != graph.nodes[i].node && d.target.node != graph.nodes[i].node }).style("stroke-opacity", 0.0).style("stroke", "#000")
-					// node_click = alert(this.parentElement.parentElement.className)
+					// Change state value
+					click = 1
+				} else if (click == 1) {
+					if (d3.select(this).style("fill") == color_click){
+						// Reset Colors
+						prevCol = ""
+						prevColR = ""
+						d3.selectAll("rect").style("fill", checkPositionAndColorize)
+						// Show all nodes
+						d3.selectAll(".link").style("stroke-opacity", 0.1).style("stroke", "#000");
+						// Change state value
+						click = 0
+					} else {
+						// Reset Colors
+						prevCol = ""
+						prevColR = ""
+						d3.selectAll("rect").style("fill", checkPositionAndColorize)
+						// Set color
+						d3.select(this).style("fill", color_click)
+						// Show all nodes
+						d3.selectAll(".link").style("stroke-opacity", 0.1).style("stroke", "#000");
+						// Show only this node links
+						d3.selectAll(".link").style("stroke", "#000").style("stroke-opacity", 0.3)
+						d3.selectAll(".link").filter(function(d) { return d.source.node != graph.nodes[i].node && d.target.node != graph.nodes[i].node }).style("stroke-opacity", 0.0).style("stroke", "#000")
+					}
 				}
-			}
-		})		
-	   .on("mouseover", function(d) {
-			div_node.transition()		
-                .duration(200)		
-                .style("opacity", .9)	
-            div_node.html("There are <strong>" + d.value +  "</strong> persons that have matched in the category '<strong>" + d.name + "</strong>'")	// define text of the tooltip
-                .style("left", (d3.event.pageX) + "px")		
-                .style("top", (d3.event.pageY - 28) + "px")
-	    })
-	   .on("mouseout", function(d) {		
-			div_node.transition()		
-				.duration(500)
-				.style("opacity", 0)
-		});
+			})		
+		   .on("mouseover", function(d) {
+				div_node.transition()		
+					.duration(200)		
+					.style("opacity", .9)	
+				div_node.html("There are <strong>" + d.value +  "</strong> persons that have matched in the category '<strong>" + d.name + "</strong>'")	// define text of the tooltip
+					.style("left", (d3.event.pageX) + "px")		
+					.style("top", (d3.event.pageY - 28) + "px")
+			})
+		   .on("mouseout", function(d) {		
+				div_node.transition()		
+					.duration(500)
+					.style("opacity", 0)
+			});
 
-  // add in the title for the nodes
-	textScale.domain(d3.extent(graph.nodes, function(d){return d.value;}));
-    node
-      .append("text")
-        .attr("x", -6)
-        .attr("y", function(d) { return d.dy / 2; })
-        .attr("dy", ".35em")
-        .attr("text-anchor", "end")
-        .attr("transform", null)
-        .text(function(d) { return d.name; })
-        .style("font-size", function(){ return textSize = textScale(this.__data__.value).toString() + "%"; })
-        .style("opacity", function(){ 
-          if(this.__data__.x > 20 && this.__data__.value > 20){
-            return 1;
-          }
-          else if(this.__data__.x < 20 && this.__data__.value > 20){
-            return 1;
-          }
-          else return 0;
-        })
-      .filter(function(d) { return d.x < width / 2; })
-        .attr("x", 6 + sankey.nodeWidth())
-        .attr("text-anchor", "start");
+	  // add in the title for the nodes
+		textScale.domain(d3.extent(graph.nodes, function(d){return d.value;}));
+		node
+		  .append("text")
+			.attr("x", -6)
+			.attr("y", function(d) { return d.dy / 2; })
+			.attr("dy", ".35em")
+			.attr("text-anchor", "end")
+			.attr("transform", null)
+			.text(function(d) { return d.name; })
+			.style("font-size", function(){ return textSize = textScale(this.__data__.value).toString() + "%"; })
+			.style("opacity", function(){ 
+			  if(this.__data__.x > 20 && this.__data__.value > 20){
+				return 1;
+			  }
+			  else if(this.__data__.x < 20 && this.__data__.value > 20){
+				return 1;
+			  }
+			  else return 0;
+			})
+		  .filter(function(d) { return d.x < width / 2; })
+			.attr("x", 6 + sankey.nodeWidth())
+			.attr("text-anchor", "start");
 
-	// Color the rectangles
-	function checkPositionAndColorize(obj){
-		if(obj.x == 0 && prevCol == "") {
-			prevCol = "#7aa5fa";
-			return "#7aa5fa";
-		  }
-		  else if(obj.x == 0 && prevCol == "#7aa5fa"){
-			prevCol = "#b4d5f9";
-			return "#b4d5f9";
-		  }
-		  else if(obj.x == 0 && prevCol == "#b4d5f9"){
-			prevCol = "#7aa5fa";
-			return "#7aa5fa";
-		  }
-		  else if(obj.x !== 0 && prevColR == "") {
-			prevColR = "#fa7aaf"; 
-			return "#fa7aaf";
-		  }
-		  else if(obj.x !== 0 && prevColR == "#fa7aaf"){
-			prevColR = "#fdc9fa";
-			return "#fdc9fa";
-		  }
-		  else if(obj.x !== 0 && prevColR == "#fdc9fa"){
-			prevColR = "#fa7aaf";
-			return "#fa7aaf";
-		  }
-	}
+		// Color the rectangles
+		function checkPositionAndColorize(obj){
+			if(obj.x == 0 && prevCol == "") {
+				prevCol = "#7aa5fa";
+				return "#7aa5fa";
+			  }
+			  else if(obj.x == 0 && prevCol == "#7aa5fa"){
+				prevCol = "#b4d5f9";
+				return "#b4d5f9";
+			  }
+			  else if(obj.x == 0 && prevCol == "#b4d5f9"){
+				prevCol = "#7aa5fa";
+				return "#7aa5fa";
+			  }
+			  else if(obj.x !== 0 && prevColR == "") {
+				prevColR = "#fa7aaf"; 
+				return "#fa7aaf";
+			  }
+			  else if(obj.x !== 0 && prevColR == "#fa7aaf"){
+				prevColR = "#fdc9fa";
+				return "#fdc9fa";
+			  }
+			  else if(obj.x !== 0 && prevColR == "#fdc9fa"){
+				prevColR = "#fa7aaf";
+				return "#fa7aaf";
+			  }
+		}
+	});
+}
 
-});
+
+
