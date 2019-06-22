@@ -42,12 +42,14 @@ var radarChartOptions = {
   color: color
 };
 
-d3.json("static/data/data_radar_list.json", function(data_radar) {
+d3.json("data/data_radar_race.json", function(data_radar) {
     var radar_keys = Object.keys(data_radar)
     var radar1 = data_radar[radar_keys[0]]
+    console.log(radar1)
     var expected = radar1[Object.keys(radar1)[0]]
     var perceive = radar1[Object.keys(radar1)[1]]
-    var data = [expected, perceive]
+    var ownView = radar1[Object.keys(radar1)[2]]
+    var data = [expected, perceive, ownView]
     RadarChart(".radarChart", data, radarChartOptions);
 });
 
