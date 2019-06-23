@@ -23,7 +23,7 @@
 
 body {
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
   padding-top: 0%;
   font-family: Geosans, "Helvetica Neue", Arial, sans-serif;
   color: #444;
@@ -89,5 +89,5 @@ div.tooltip_link {
 }
 
 svg {
-padding-left:0%
+padding-left:8%
 }
