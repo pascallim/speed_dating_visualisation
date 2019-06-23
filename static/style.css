@@ -15,12 +15,35 @@
   font-family: Geosans;
   src: url("GeosansLight.ttf")
 }
+
 body {
   margin: 0 auto;
-  width: 30%;
-  padding-top: 10%;
+  width: 40%;
+  padding-top: 0%;
   font-family: Geosans, "Helvetica Neue", Arial, sans-serif;
   color: #444;
   background-color: #fffdfb;
   line-height: 1.5;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+
+
+select {
+
+  /* styling */
+  background-color:whitesmoke;
+  border: thin solid rgb(152, 141, 212);
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1em;
+  padding: 0.5em 3em 0.5em 0.5em;
+  text-align: center
+
+ 
 }
