@@ -1,0 +1,48 @@
+/* The CSS file */
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .05;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+@font-face{
+  font-family: Geosans;
+  src: url("GeosansLight.ttf")
+}
+
+body {
+  width: 100%;
+  padding-top: 0%;
+  font-family: Geosans, "Helvetica Neue", Arial, sans-serif;
+  color: #444;
+  background-color: #fffdfb;
+  line-height: 1.5;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 5px 5px;
+}
+
+h2 {
+  padding-left:30%;
+}
+svg {
+  padding-left:25%;
+}
+.legend {
+  font-family: 'Work Sans', sans-serif;
+  fill: #333333;
+}
+
+.tooltip {
+  fill: #333333;
+}
+
