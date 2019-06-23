@@ -11,6 +11,11 @@
   pointer-events: none;
   text-shadow: 0 1px 0 #fff;
 }
+
+.node rect {
+	border-radius: 50px;	
+}
+
 @font-face{
   font-family: Geosans;
   src: url("GeosansLight.ttf")
@@ -29,9 +34,17 @@ body {
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 10px 10px;
+  padding: 5px 5px;
 }
 
+.legend {
+  font-family: 'Raleway', sans-serif;
+  fill: #333333;
+}
+
+.tooltip {
+  fill: #333333;
+}
 
 select {
 
@@ -44,6 +57,37 @@ select {
   line-height: 1em;
   padding: 0.5em 3em 0.5em 0.5em;
   text-align: center
-
  
+}
+
+div.tooltip_node {	
+  position: aboslute;
+/* left: 20px; */
+  top: 50px;
+  text-align: center;		
+  width: 170;					
+  height: 40px;
+  padding: 10px;				
+  font: 14px tahoma;	
+  background: #fbf9fbc9;	
+  border: 0px;		
+  border-radius: 0px;			
+  pointer-events: none;
+}
+
+div.tooltip_link {	
+  position: absolute;			
+  text-align: center;			
+  width: 250px;					
+  height: 100px;
+  padding: 10px;				
+  font: 14px tahoma;		
+  background: #fbf9fbc9;	
+  border: 0px;		
+  border-radius: 0px;			
+  pointer-events: none;
+}
+
+svg {
+padding-left:0%
 }
