@@ -9,12 +9,6 @@
          <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
          <!-- Load d3.js -->
         <script src="js/d3/d3.min.js"></script>
-        
-        <!-- Load the sankey.js function -->
-        <!-- Load JQuery -->
-        <script src="js/jquery-3.4.1.js"></script>
-        <script src="js/sankey.js"></script>
-        <script src="js/radarChart.js"></script>
       </head>
     
 <body>
@@ -27,14 +21,11 @@
         </center>
 </div>
 
-<div>
-    <h2>Sankey Diagram</h2>
-</div>
 
 <!-- Men/Women symbol -->
 <p>
     <label for="input ID H">
-        <img src="/static/men.png" alt="men" width="40" height="40" style="float:right">
+        <img src="/static/men.png" alt="men" width="40" height="40">
     </label>
     <label for="input ID F">
         <img src="/static/women.png" alt="women" width="40" height="40">
@@ -42,14 +33,13 @@
 </p>
 
 <!-- Create a div where the select menus will take place -->
-<div>
-<select id="category_H" class="category"	name="category_H" style="float:right">
+<select id="category_H" class="category"	name="category_H">
         <option value="Ethnie">Ethnie</option>
         <option value="Localisation">Localisation</option>
         <option value="Etude">Etude</option>
         <option value="Carrière">Carrière</option>
         <option value="Objectif">Objectif</option>
-    </select>
+</select>
 
 <select id="category_F" class="category"	name="category_F">
 	<option value="Ethnie">Ethnie</option>
@@ -58,13 +48,17 @@
 	<option value="Carrière">Carrière</option>
 	<option value="Objectif">Objectif</option>
 </select>
-</div>
 
 <!-- Create a div where the sankey graph will take place -->
+<p>
 <div id="my_dataviz"></div>
-<!-- Load the chart_sankey.js function -->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/sankey.js"></script>
 <script src="js/chart_sankey.js"></script>
 
+<script src="js/radarChart.js"></script>
+<script src="js/data_Radar.js"></script>
+</p>
 
 </body>
 </html>
