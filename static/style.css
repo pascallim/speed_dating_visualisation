@@ -23,7 +23,7 @@
 
 body {
   margin: 0 auto;
-  width: 50%;
+  
   padding-top: 0%;
   font-family: Geosans, "Helvetica Neue", Arial, sans-serif;
   color: #444;
@@ -31,12 +31,10 @@ body {
   line-height: 1.5;
 }
 
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 5px 5px;
+.category_H {
+  position:relative;
+  top: 40px; left:40px;
 }
-
 .legend {
   font-family: 'Raleway', sans-serif;
   fill: #333333;
@@ -89,5 +87,5 @@ div.tooltip_link {
 }
 
 svg {
-padding-left:8%
+padding-left:3%;
 }
