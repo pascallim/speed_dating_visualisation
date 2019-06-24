@@ -29,8 +29,7 @@ var data = [
 */
 //usage:
 
-var color = d3.scale.ordinal()
-  .range(["#EDC951","#CC333F","#00A0B0"]);
+var color = d3.scaleOrdinal().range(["#EDC951","#CC333F","#00A0B0"]);
 
 var radarChartOptions = {
   w: width,
