@@ -334,9 +334,13 @@ function constructSankey (attribute_H, attribute_F){
 	// Variables initialization
 	var prevCol = "";
 	var prevColR = "";
+	var click_H = "";
+	var click_F = "";
 	var click = 0;
 	var color_click = "rgb(95, 101, 112)";
-	var node_click = 0;
+	var color_link = "#fff"
+	var node_click_H = "";
+	var node_click_F = "";
 	var node_selected;
 	var graph = {"nodes" : [], "links" : []};
 	
@@ -437,11 +441,14 @@ function constructSankey (attribute_H, attribute_F){
 		  .attr("width", sankey.nodeWidth())
 		  .attr("rx", 4)
 		  .attr("ry", 4)
+		  .attr("id", function(d){ return "rect_"+d.node; })
 		  .style("fill", checkPositionAndColorize) // Color
 		  .on("click", function(d, i) {
 				node_selected = d.node;
-				console.log(node_selected);
-				if (click == 0) {
+				if (click_H == 0 && d.x==0) {
+					// Change state value
+					click_H = 1;
+					node_click_H = d.node;
 					// Reset Colors
 					prevCol = ""
 					prevColR = ""
@@ -449,21 +456,34 @@ function constructSankey (attribute_H, attribute_F){
 					// Change color
 					d3.select(this).style("fill", color_click)
 					// Show only this node links
-					d3.selectAll(".link").style("stroke", "#000").style("stroke-opacity", 0.3)
-					d3.selectAll(".link").filter(function(d) { return d.source.node != graph.nodes[i].node && d.target.node != graph.nodes[i].node }).style("stroke-opacity", 0.0).style("stroke", "#000")
-					// Change state value
-					click = 1
-				} else if (click == 1) {
+					d3.selectAll(".link").style("stroke", color_link).style("stroke-opacity", 0.8)
+					if (click_F == 0) {
+						d3.selectAll(".link").filter(function(d) { return d.source.node != node_click_H}).style("stroke-opacity", 0.0).style("stroke", color_link);
+					} else {
+						d3.select("#rect_"+node_click_F).style("fill", color_click)
+						d3.selectAll(".link").filter(function(d) { return d.source.node != node_click_H  && d.target.node != node_click_F}).style("stroke-opacity", 0.0).style("stroke", color_link);
+					}
+					
+				} else if (click_H == 1 && d.x==0 ) {
 					if (d3.select(this).style("fill") == color_click){
+						// Change state value
+						click_H = 0;
+						node_click_H = "";
 						// Reset Colors
 						prevCol = ""
 						prevColR = ""
 						d3.selectAll("rect").style("fill", checkPositionAndColorize)
 						// Show all nodes
-						d3.selectAll(".link").style("stroke-opacity", 0.1).style("stroke", "#000");
-						// Change state value
-						click = 0
+						if (click_F == 0) {
+							d3.selectAll(".link").style("stroke-opacity", 0.5).style("stroke", color_link);
+						} else {
+							d3.select("#rect_"+node_click_F).style("fill", color_click)
+							d3.selectAll(".link").style("stroke-opacity", 0.0).style("stroke", color_link);
+							d3.selectAll(".link").filter(function(d) { return d.target.node == node_click_F }).style("stroke-opacity", 0.8).style("stroke", color_link);
+						}
 					} else {
+						// Change state value
+						node_click_H = d.node;
 						// Reset Colors
 						prevCol = ""
 						prevColR = ""
@@ -471,10 +491,70 @@ function constructSankey (attribute_H, attribute_F){
 						// Set color
 						d3.select(this).style("fill", color_click)
 						// Show all nodes
-						d3.selectAll(".link").style("stroke-opacity", 0.1).style("stroke", "#000");
-						// Show only this node links
-						d3.selectAll(".link").style("stroke", "#000").style("stroke-opacity", 0.3)
-						d3.selectAll(".link").filter(function(d) { return d.source.node != graph.nodes[i].node && d.target.node != graph.nodes[i].node }).style("stroke-opacity", 0.0).style("stroke", "#000")
+						d3.selectAll(".link").style("stroke-opacity", 0.5).style("stroke", color_link);
+						// Show this node links
+						d3.selectAll(".link").style("stroke", color_link).style("stroke-opacity", 0.8);
+						if (click_F == 0) {
+							d3.selectAll(".link").filter(function(d) { return d.source.node != node_click_H}).style("stroke-opacity", 0.0).style("stroke", color_link);
+						} else {
+							d3.select("#rect_"+node_click_F).style("fill", color_click)
+							d3.selectAll(".link").filter(function(d) { return d.target.node == node_click_F }).style("stroke-opacity", 0.8).style("stroke", color_link);
+						}
+					}
+				} else if (click_F == 0 && d.x!=0) {
+					// Change state value
+					click_F = 1;
+					node_click_F = d.node;
+					// Reset Colors
+					prevCol = ""
+					prevColR = ""
+					d3.selectAll("rect").style("fill", checkPositionAndColorize)
+					// Set color
+					d3.select(this).style("fill", color_click)
+					// Show only this node links
+					d3.selectAll(".link").style("stroke", color_link).style("stroke-opacity", 0.8)
+					if (click_H == 0) {
+						d3.selectAll(".link").filter(function(d) { return d.source.node != node_click_F}).style("stroke-opacity", 0.0).style("stroke", color_link);
+					} else {
+						d3.select("#rect_"+node_click_H).style("fill", color_click)
+						d3.selectAll(".link").filter(function(d) { return d.source.node != node_click_H  && d.target.node != node_click_F}).style("stroke-opacity", 0.0).style("stroke", color_link);
+					}
+				} else if (click_F == 1 && d.x!=0) {
+					if (d3.select(this).style("fill") == color_click){
+						// Change state value
+						click_F = 0;
+						node_click_F = "";
+						// Reset Colors
+						prevCol = ""
+						prevColR = ""
+						d3.selectAll("rect").style("fill", checkPositionAndColorize)
+						// Show all nodes
+						if (click_H == 0) {
+							d3.selectAll(".link").style("stroke-opacity", 0.5).style("stroke", color_link);
+						} else {
+							d3.select("#rect_"+node_click_H).style("fill", color_click)
+							d3.selectAll(".link").style("stroke-opacity", 0.0).style("stroke", color_link);
+							d3.selectAll(".link").filter(function(d) { return d.source.node == node_click_H }).style("stroke-opacity", 0.8).style("stroke", color_link);
+						}
+					} else {
+						// Change state value
+						node_click_F = d.node;
+						// Reset Colors
+						prevCol = ""
+						prevColR = ""
+						d3.selectAll("rect").style("fill", checkPositionAndColorize)
+						// Set color
+						d3.select(this).style("fill", color_click)
+						// Show all nodes
+						d3.selectAll(".link").style("stroke-opacity", 0.5).style("stroke", color_link);
+						// Show this node links
+						d3.selectAll(".link").style("stroke", color_link).style("stroke-opacity", 0.8);
+						if (click_H == 0) {
+							d3.selectAll(".link").filter(function(d) { return d.target.node != node_click_F}).style("stroke-opacity", 0.0).style("stroke", color_link);
+						} else {
+							d3.select("#rect_"+node_click_H).style("fill", color_click)
+							d3.selectAll(".link").filter(function(d) { return d.source.node == node_click_H }).style("stroke-opacity", 0.8).style("stroke", color_link);
+						}
 					}
 				}
 			})		
