@@ -1,32 +1,46 @@
 /* The CSS file */
+
+/* Body */
 body {
   margin: 0 auto;
   padding-top: 3%;
   font-family: Geosans, 'azo-sans-web', sans-serif;
   color: #444;
-  background-color: #151d1e;
+  /*background-color: #151d1e;*/
+  background-size:cover;
+  background: linear-gradient(to bottom, #151d1e, #2a383a, #415659, #597579, #72969c);
+  /*background-image: linear-gradient(to right bottom, #eac0cc, #d6c0dd, #b5c3e5, #96c6dd, #8ac6c5);*/
   line-height: 1.5;
 }
 
+/* Title */
 h1 {
-  color: #fff;
+  color: white;
   font-family: Geosans, 'azo-sans-web', sans-serif;
 }
 
-hr.style1{
-	border-top: 1px solid #8c8b8b;
+/* Horizontal Line */
+hr#one {
+  width: 50%;
+  height: 0.8px;
+  margin: 3em auto;
+  border-color: rgb(151, 218, 190);
 }
 
+/* Legend radar chart */
 .legend {
   font-family: 'Raleway', sans-serif;
-  fill: #fff;
+  fill: white;
   font-size: 1.4em;
+  
 }
 
+/* Tooltip radar chart */
 .tooltip {
-  fill: #333333;
+  fill: #fff;
 }
 
+/* Icon man  & woman */
 .men {
 padding-left : 7%;
 filter: brightness(0) invert(1);
@@ -37,9 +51,8 @@ filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
 
+/* Styling select */
 select {
-
-  /* styling */
   background-color:rgb(138, 207, 168);
   border: thin solid rgb(151, 218, 190);
   border-radius: 4px;
@@ -48,6 +61,7 @@ select {
   line-height: 1em;
   padding: 0.5em 3em 0.5em 0.5em;
   text-align: center;
+  width:120px;
 }
 
 .select_men {
@@ -55,9 +69,10 @@ select {
 }
 
 .select_women {
-  padding-left: 26%;
+  padding-left: 23%;
 }
 
+/* Node */
 div.tooltip_node {	
   top: 50px;	
   width: 600px;					
@@ -69,8 +84,12 @@ div.tooltip_node {
   border-radius: 0px;			
   pointer-events: none;
   padding-left:5%;
+  /* fade animation */
+  opacity: 0;
+  transition: opacity 1s;
 }
 
+/* Link */
 div.tooltip_link {	
   position: absolute;			
   text-align: center;			
@@ -82,6 +101,9 @@ div.tooltip_link {
   border: 0px;		
   border-radius: 0px;			
   pointer-events: none;
+  /* fade animation */
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 svg {
@@ -91,15 +113,17 @@ padding-left:4%;
 .link {
   fill: none;
   stroke: #fff;
-  stroke-opacity: 0.6;
+  stroke-opacity: 0.5;
 }
 .link:hover {
   stroke-opacity: .8;
 }
 
+/* Node text */
 .node text {
   pointer-events: none;
   color: #fff;
+  font-size: 12px;
 }
 
 .node rect {
@@ -115,10 +139,3 @@ padding-left:4%;
 
 @import url(https://fonts.googleapis.com/css?family=Megrim);
 
-hr#one {
-  width: 50%;
-  height: 0.2px;
-  margin: 3em auto;
-  border-color: rgb(151, 218, 190);
-  color: rgb(184, 86, 161)
-}
