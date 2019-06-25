@@ -1,0 +1,4022 @@
+{
+  "(1.0, 1.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.17373076923076924
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15812692307692308
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19168846153846159
+      },
+      {
+        "axis": "Fun",
+        "value": 0.17050384615384617
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1749961538461539
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.6666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7777777777777778
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8222222222222224
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7555555555555555
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8222222222222222
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6961538461538462
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8423076923076922
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8576923076923075
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7653846153846154
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8269230769230769
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.19933076923076926
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1712192307692308
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19030384615384618
+      },
+      {
+        "axis": "Fun",
+        "value": 0.19521923076923084
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1257923076923077
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7222222222222222
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7666666666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9222222222222223
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8777777777777778
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8111111111111112
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8076923076923078
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8615384615384615
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8846153846153845
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8615384615384616
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8346153846153848
+      }
+    ]
+  },
+  "(1.0, 2.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.17272571428571432
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18073071428571416
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.21578642857142846
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1837121428571427
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13586714285714285
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.6594594594594597
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7675675675675678
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8391891891891892
+      },
+      {
+        "axis": "Fun",
+        "value": 0.768918918918919
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7702702702702704
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6842857142857139
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8078571428571429
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8499999999999998
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7978571428571427
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7785714285714287
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.25490214285714297
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15816000000000005
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19380214285714292
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1810192857142856
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09228714285714282
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.702702702702703
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8067567567567566
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7824324324324324
+      },
+      {
+        "axis": "Fun",
+        "value": 0.772972972972973
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7594594594594593
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7578571428571427
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8314285714285715
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8378571428571427
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8028571428571432
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7349999999999994
+      }
+    ]
+  },
+  "(1.0, 3.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.206925
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1970250000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.21983750000000007
+      },
+      {
+        "axis": "Fun",
+        "value": 0.16010000000000005
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.11608749999999997
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.63125
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7499999999999999
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.775
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7124999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.73125
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6593749999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7812500000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7625000000000002
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.71875
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.28836562499999985
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1694875
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.17098125000000003
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1935633333333334
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.08816666666666667
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7749999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8375000000000004
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.875
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6187500000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7437499999999999
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6937499999999998
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8906249999999994
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8250000000000002
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7281250000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7593749999999997
+      }
+    ]
+  },
+  "(1.0, 4.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.196165625
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18246249999999994
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20149843750000007
+      },
+      {
+        "axis": "Fun",
+        "value": 0.15994531249999994
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.12317187499999996
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.6749999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7895833333333333
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8666666666666666
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7500000000000003
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7625000000000002
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6671875000000002
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8140624999999999
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8359374999999998
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7609374999999997
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7765624999999996
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.27625468750000004
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.14870624999999993
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19465937499999986
+      },
+      {
+        "axis": "Fun",
+        "value": 0.17974218750000004
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.07931874999999997
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6333333333333335
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7583333333333333
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8020833333333329
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6833333333333332
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7729166666666667
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6593749999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8359374999999996
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8015624999999992
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7374999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7453124999999999
+      }
+    ]
+  },
+  "(1.0, 6.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.1453894736842105
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.20232105263157896
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.22438421052631588
+      },
+      {
+        "axis": "Fun",
+        "value": 0.21436315789473687
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.08705789473684213
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7428571428571429
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7714285714285714
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7999999999999999
+      },
+      {
+        "axis": "Fun",
+        "value": 0.742857142857143
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7714285714285716
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7157894736842106
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8263157894736843
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8631578947368422
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8157894736842106
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7473684210526317
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.3092263157894736
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.14905789473684214
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18606315789473687
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1776526315789474
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.06787368421052632
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6571428571428571
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9428571428571428
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8142857142857143
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6571428571428571
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7157894736842105
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8631578947368422
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8421052631578949
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8368421052631582
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6947368421052632
+      }
+    ]
+  },
+  "(2.0, 1.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.1598
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1635538461538462
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18877692307692306
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1840384615384615
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1600076923076923
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.725
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.75
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.95
+      },
+      {
+        "axis": "Fun",
+        "value": 0.775
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.725
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7307692307692307
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7846153846153846
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8538461538461538
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7461538461538461
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8076923076923077
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.22905384615384616
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15749230769230765
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.22026923076923074
+      },
+      {
+        "axis": "Fun",
+        "value": 0.19575384615384614
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09000000000000002
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.675
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7999999999999999
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.95
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9249999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7923076923076924
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8769230769230769
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8769230769230771
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8923076923076925
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8461538461538461
+      }
+    ]
+  },
+  "(2.0, 2.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.16943189655172405
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.19158103448275848
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.21302241379310322
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18765775862068962
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1301068965517241
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7263888888888892
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.748611111111111
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8347222222222224
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7888888888888892
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7041666666666673
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7301724137931044
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7896551724137931
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.832758620689655
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7905172413793103
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7646551724137927
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2774818965517241
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.14382500000000006
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.1991198275862069
+      },
+      {
+        "axis": "Fun",
+        "value": 0.19789741379310344
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.07616810344827578
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7166666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8388888888888882
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7902777777777774
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7652777777777781
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7680555555555552
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7431034482758617
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8310344827586204
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8249999999999993
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7965517241379312
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7362068965517239
+      }
+    ]
+  },
+  "(2.0, 3.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.18706521739130433
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.19793913043478262
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.23869565217391298
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1590956521739131
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.10989130434782605
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7176470588235295
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8235294117647058
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8764705882352941
+      },
+      {
+        "axis": "Fun",
+        "value": 0.776470588235294
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7705882352941176
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7608695652173914
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8565217391304347
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8782608695652175
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8173913043478261
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2577217391304347
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15944782608695654
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.22615652173913048
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18534347826086953
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09190000000000001
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7999999999999999
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7250000000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8083333333333335
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7277777777777779
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8722222222222222
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8111111111111113
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7555555555555556
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7833333333333335
+      }
+    ]
+  },
+  "(2.0, 4.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.16344347826086963
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.17760434782608697
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.21663695652173912
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18004347826086955
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13331739130434772
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7064516129032258
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7903225806451611
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8483870967741933
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7774193548387097
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7741935483870968
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7347826086956524
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8304347826086954
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8521739130434779
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7630434782608695
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7826086956521737
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.25237608695652175
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1467260869565217
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20669999999999997
+      },
+      {
+        "axis": "Fun",
+        "value": 0.19542391304347828
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09373478260869562
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6225806451612902
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8032258064516127
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8096774193548386
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7064516129032257
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7129032258064514
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6565217391304349
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8282608695652173
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7847826086956522
+      },
+      {
+        "axis": "Fun",
+        "value": 0.732608695652174
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7173913043478264
+      }
+    ]
+  },
+  "(2.0, 6.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.1532235294117647
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1681294117647059
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.25744705882352953
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18328235294117648
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.10283529411764705
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.68
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.86
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9400000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 0.86
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7999999999999999
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7117647058823529
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7764705882352941
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8588235294117648
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8235294117647058
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7294117647058824
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2446470588235294
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1417
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.21176470588235294
+      },
+      {
+        "axis": "Fun",
+        "value": 0.2013764705882353
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.10980000000000001
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7799999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9400000000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8400000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 0.74
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7117647058823531
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8411764705882354
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8352941176470591
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7941176470588237
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7705882352941177
+      }
+    ]
+  },
+  "(3.0, 1.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.16666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.20000000000000004
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.13333333333333333
+      },
+      {
+        "axis": "Fun",
+        "value": 0.2333333333333333
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09999999999999999
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7333333333333334
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8000000000000002
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9333333333333332
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9333333333333332
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2333333333333333
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.13333333333333333
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20000000000000004
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18333333333333335
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13333333333333333
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9333333333333332
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8666666666666667
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8000000000000002
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9333333333333332
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6333333333333333
+      }
+    ]
+  },
+  "(3.0, 2.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.1760714285714286
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.16964285714285718
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20964285714285716
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1900000000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13678571428571432
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.6619047619047618
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7333333333333334
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.819047619047619
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7428571428571429
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8095238095238095
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.742857142857143
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8428571428571429
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8785714285714282
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8142857142857144
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7642857142857145
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2780964285714285
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18482142857142853
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20529642857142863
+      },
+      {
+        "axis": "Fun",
+        "value": 0.163125
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.10648148148148151
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.738095238095238
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8142857142857142
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8333333333333335
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7761904761904762
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7809523809523808
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7785714285714285
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8428571428571429
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8500000000000004
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8214285714285714
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7428571428571429
+      }
+    ]
+  },
+  "(3.0, 3.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.2039
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18669999999999998
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2212454545454545
+      },
+      {
+        "axis": "Fun",
+        "value": 0.14393636363636364
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1448818181818182
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7374999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7374999999999999
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.825
+      },
+      {
+        "axis": "Fun",
+        "value": 0.825
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8375
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7363636363636363
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8090909090909091
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8727272727272729
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7909090909090909
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.790909090909091
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.30500909090909095
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.17629090909090908
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2132909090909091
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1531909090909091
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.10051000000000002
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7714285714285714
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8428571428571429
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8285714285714286
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7857142857142857
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8285714285714285
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.72
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.86
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.82
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8299999999999998
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8800000000000001
+      }
+    ]
+  },
+  "(3.0, 4.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.17280000000000004
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.2096
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19439999999999993
+      },
+      {
+        "axis": "Fun",
+        "value": 0.17
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1124
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.665217391304348
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8086956521739133
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8391304347826088
+      },
+      {
+        "axis": "Fun",
+        "value": 0.708695652173913
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7782608695652175
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6679999999999998
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8559999999999998
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8799999999999999
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7240000000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6920000000000001
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.26027200000000006
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18484
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.238552
+      },
+      {
+        "axis": "Fun",
+        "value": 0.141016
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09103200000000003
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.5956521739130435
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7869565217391304
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8086956521739131
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7217391304347825
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6913043478260869
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6240000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.824
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8200000000000002
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7519999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.68
+      }
+    ]
+  },
+  "(3.0, 6.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.17124999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.19125
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.225
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18125000000000002
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.08374999999999999
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.65
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.85
+      },
+      {
+        "axis": "Fun",
+        "value": 0.75
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.775
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7625
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8375
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.875
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7875
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6875
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.29375
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.23124999999999998
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.23125
+      },
+      {
+        "axis": "Fun",
+        "value": 0.14375
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.07857142857142856
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.95
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.875
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7749999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.825
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.775
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8500000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8500000000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.75
+      }
+    ]
+  },
+  "(4.0, 1.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.14500000000000002
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.19
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.13
+      },
+      {
+        "axis": "Fun",
+        "value": 0.24
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.11499999999999999
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 1.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 1.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 1.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.95
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.185
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.225
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.225
+      },
+      {
+        "axis": "Fun",
+        "value": 0.225
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.08
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.9
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8500000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.95
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8500000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 1.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.85
+      }
+    ]
+  },
+  "(4.0, 2.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.14189999999999997
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18499230769230765
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.21352307692307695
+      },
+      {
+        "axis": "Fun",
+        "value": 0.20653076923076924
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13806923076923078
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.54
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.82
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6199999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8800000000000001
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.8538461538461537
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.776923076923077
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9076923076923079
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8692307692307693
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9000000000000001
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.35000000000000003
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.13076923076923078
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18076923076923077
+      },
+      {
+        "axis": "Fun",
+        "value": 0.19230769230769235
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.03923076923076923
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.96
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8600000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 0.78
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8800000000000001
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7384615384615383
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8076923076923078
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8307692307692309
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8461538461538463
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8000000000000003
+      }
+    ]
+  },
+  "(4.0, 3.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.2
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.2
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.25
+      },
+      {
+        "axis": "Fun",
+        "value": 0.2
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.05
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 1.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 1.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 1.0
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 1.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 1.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 1.0
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.2
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2
+      },
+      {
+        "axis": "Fun",
+        "value": 0.2
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.4
+      }
+    ]
+  },
+  "(4.0, 4.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.27084444444444444
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.17945555555555556
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19501111111111114
+      },
+      {
+        "axis": "Fun",
+        "value": 0.14514444444444444
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09390000000000001
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8166666666666668
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8833333333333333
+      },
+      {
+        "axis": "Fun",
+        "value": 0.75
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8666666666666667
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.8222222222222223
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8444444444444446
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9444444444444444
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8888888888888888
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8222222222222223
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2911111111111111
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15555555555555556
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18888888888888888
+      },
+      {
+        "axis": "Fun",
+        "value": 0.20555555555555557
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.05111111111111111
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6833333333333332
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8500000000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7833333333333333
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7000000000000001
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8166666666666668
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8555555555555556
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7777777777777778
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7111111111111112
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7222222222222222
+      }
+    ]
+  },
+  "(4.0, 6.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.17500000000000002
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.175
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18750000000000003
+      },
+      {
+        "axis": "Fun",
+        "value": 0.225
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.11250000000000002
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.85
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.55
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.75
+      },
+      {
+        "axis": "Fun",
+        "value": 0.65
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.8749999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.875
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.925
+      },
+      {
+        "axis": "Fun",
+        "value": 0.925
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.875
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.35
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1875
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.1625
+      },
+      {
+        "axis": "Fun",
+        "value": 0.225
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0125
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.75
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6499999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.75
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.775
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7999999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7250000000000001
+      }
+    ]
+  },
+  "(5.0, 1.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.12306666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15896666666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.24486666666666665
+      },
+      {
+        "axis": "Fun",
+        "value": 0.17179999999999998
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.15513333333333332
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.6
+      },
+      {
+        "axis": "Sincere",
+        "value": 1.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6999999999999998
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6666666666666666
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8333333333333334
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.20576666666666665
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.19156666666666666
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20576666666666665
+      },
+      {
+        "axis": "Fun",
+        "value": 0.16983333333333336
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.14853333333333332
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9333333333333332
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9333333333333332
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9333333333333332
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9333333333333332
+      }
+    ]
+  },
+  "(5.0, 2.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.1668666666666667
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1857166666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18988333333333338
+      },
+      {
+        "axis": "Fun",
+        "value": 0.17744444444444446
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1534888888888889
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7333333333333335
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7777777777777779
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9222222222222223
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9000000000000001
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7111111111111109
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8888888888888888
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8888888888888891
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7166666666666666
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8388888888888887
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.44760000000000005
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.11220000000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.16888888888888898
+      },
+      {
+        "axis": "Fun",
+        "value": 0.16091111111111103
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.03171111111111111
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7333333333333334
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8111111111111111
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8333333333333334
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7666666666666667
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8777777777777779
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8444444444444447
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8277777777777778
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7722222222222224
+      }
+    ]
+  },
+  "(5.0, 3.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.174525
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.176525
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.189025
+      },
+      {
+        "axis": "Fun",
+        "value": 0.158925
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.164025
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.625
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.925
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6499999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.725
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2064
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1351
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2689
+      },
+      {
+        "axis": "Fun",
+        "value": 0.16385000000000002
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0694
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.675
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.95
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.85
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.875
+      }
+    ]
+  },
+  "(5.0, 4.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.17759999999999998
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.17434999999999998
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19892500000000002
+      },
+      {
+        "axis": "Fun",
+        "value": 0.188475
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.15305
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.85
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.95
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.95
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.95
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7749999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7250000000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7749999999999999
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.825
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.295575
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.124725
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.149725
+      },
+      {
+        "axis": "Fun",
+        "value": 0.3149
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0774
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.75
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7
+      },
+      {
+        "axis": "Fun",
+        "value": 0.75
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.55
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7249999999999999
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.825
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.7500000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7
+      }
+    ]
+  },
+  "(5.0, 6.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.16333333333333336
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.17
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.26666666666666666
+      },
+      {
+        "axis": "Fun",
+        "value": 0.16
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09333333333333334
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 1.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 1.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 1.0
+      },
+      {
+        "axis": "Fun",
+        "value": 1.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 1.0
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7000000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9666666666666667
+      },
+      {
+        "axis": "Fun",
+        "value": 0.6666666666666666
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7333333333333334
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.23760000000000003
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1234
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.22093333333333331
+      },
+      {
+        "axis": "Fun",
+        "value": 0.24256666666666668
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.03793333333333333
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 1.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6999999999999998
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8000000000000002
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7666666666666666
+      }
+    ]
+  },
+  "(6.0, 1.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.31529999999999997
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.12532500000000002
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.20015000000000002
+      },
+      {
+        "axis": "Fun",
+        "value": 0.14495
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13975
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.75
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.975
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.875
+      },
+      {
+        "axis": "Fun",
+        "value": 0.875
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8500000000000001
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.2237
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1737
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.19870000000000002
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1487
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.11895
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.8250000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.55
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8500000000000001
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8500000000000001
+      }
+    ]
+  },
+  "(6.0, 2.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.19379473684210527
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1683526315789474
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2367736842105264
+      },
+      {
+        "axis": "Fun",
+        "value": 0.18630526315789475
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13051578947368422
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.475
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.825
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.85
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.6615384615384615
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9076923076923078
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8846153846153848
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7769230769230769
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.6923076923076924
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.47223157894736845
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.141178947368421
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.15433684210526313
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0938105263157895
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.05252105263157897
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7100000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8800000000000001
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8299999999999998
+      },
+      {
+        "axis": "Fun",
+        "value": 0.78
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8099999999999999
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7789473684210527
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8578947368421053
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8526315789473685
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8157894736842105
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8263157894736843
+      }
+    ]
+  },
+  "(6.0, 3.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.26881666666666665
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.13895000000000002
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.18561666666666668
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1772166666666667
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.13061666666666666
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 1.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 1.0
+      },
+      {
+        "axis": "Fun",
+        "value": 1.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 1.0
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.7000000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8833333333333333
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7666666666666667
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7999999999999999
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.27706666666666663
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.1604
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2187333333333333
+      },
+      {
+        "axis": "Fun",
+        "value": 0.1604
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.08798333333333334
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.9
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7666666666666667
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.85
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8166666666666668
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8000000000000002
+      }
+    ]
+  },
+  "(6.0, 4.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.11
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.18999999999999997
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2783333333333333
+      },
+      {
+        "axis": "Fun",
+        "value": 0.15
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.09833333333333334
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.7
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.4
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.55
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.75
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.75
+      },
+      {
+        "axis": "Fun",
+        "value": 0.575
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.55
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.4583333333333333
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15333333333333332
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.15333333333333332
+      },
+      {
+        "axis": "Fun",
+        "value": 0.11166666666666668
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.036666666666666674
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.7000000000000001
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7666666666666666
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8666666666666667
+      },
+      {
+        "axis": "Fun",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7333333333333334
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.6666666666666666
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.7666666666666667
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.8333333333333334
+      },
+      {
+        "axis": "Fun",
+        "value": 0.7666666666666666
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.7666666666666666
+      }
+    ]
+  },
+  "(6.0, 6.0)": {
+    "expected": [
+      {
+        "axis": "Attractive",
+        "value": 0.15
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.15
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.2
+      },
+      {
+        "axis": "Fun",
+        "value": 0.25
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.1
+      }
+    ],
+    "perceive": [
+      {
+        "axis": "Attractive",
+        "value": 0.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0
+      }
+    ],
+    "ownView": [
+      {
+        "axis": "Attractive",
+        "value": 0.8
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.8
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.8
+      }
+    ],
+    "expected_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.25
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.25
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.25
+      },
+      {
+        "axis": "Fun",
+        "value": 0.15
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.05
+      }
+    ],
+    "perceive_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.0
+      },
+      {
+        "axis": "Sincere",
+        "value": 0.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.0
+      },
+      {
+        "axis": "Fun",
+        "value": 0.0
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.0
+      }
+    ],
+    "ownView_target": [
+      {
+        "axis": "Attractive",
+        "value": 0.9
+      },
+      {
+        "axis": "Sincere",
+        "value": 1.0
+      },
+      {
+        "axis": "Intelligent",
+        "value": 0.9
+      },
+      {
+        "axis": "Fun",
+        "value": 0.9
+      },
+      {
+        "axis": "Ambitious",
+        "value": 0.9
+      }
+    ]
+  }
+}
