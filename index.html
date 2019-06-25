@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title> Speed Dating </title>
          <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
-         <link rel="stylesheet" type="text/css" href="/static/style.css" media="screen">
+         <link rel="stylesheet" type="text/css" href="/static/style2.css" media="screen">
          <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
          <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
          <!-- Load d3.js -->
@@ -16,41 +16,45 @@
 <!-- Header -->
 <div class="header">
         <center>
-            <img src="/static/letter_love_img.png" alt="letter_love_img" width="150" height="150">
-            <h1>Speed Dating Viz</h1>
+            <img src="/static/love.png" alt="letter_love_img" width="160" height="150">
+            <h1>SPEED DATING</h1>
         </center>
 </div>
 
+<hr id="one">
 
 <!-- Men/Women symbol -->
-<p>
-    <label for="input ID H">
-        <img src="/static/men.png" alt="men" width="40" height="40">
+<div>
+    <label class="men">
+        <img src="/static/men.png" alt="men" width="50" height="50">
     </label>
-    <label for="input ID F">
-        <img src="/static/women.png" alt="women" width="40" height="40">
+    <label class="women">
+        <img src="/static/women.png" alt="women" width="50" height="50">
     </label>
-</p>
+</div>
 
 <!-- Create a div where the select menus will take place -->
-<select id="category_H" class="category"	name="category_H">
+<label class="select_men">
+<select id="category_H">
         <option value="Ethnie">Ethnie</option>
         <option value="Localisation">Localisation</option>
         <option value="Etude">Etude</option>
         <option value="Carrière">Carrière</option>
         <option value="Objectif">Objectif</option>
 </select>
+</label>
 
-<select id="category_F" class="category"	name="category_F">
+<label class="select_women">
+<select id="category_F">
 	<option value="Ethnie">Ethnie</option>
 	<option value="Localisation">Localisation</option>
 	<option value="Etude">Etude</option>
 	<option value="Carrière">Carrière</option>
 	<option value="Objectif">Objectif</option>
 </select>
+</label>
 
 <!-- Create a div where the sankey graph will take place -->
-<p>
 <div id="my_dataviz"></div>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/sankey.js"></script>
@@ -58,7 +62,6 @@
 
 <script src="js/radarChart.js"></script>
 <script src="js/data_Radar.js"></script>
-</p>
 
 </body>
 </html>
