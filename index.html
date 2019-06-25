@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <title> Speed Dating </title>
          <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
-         <link rel="stylesheet" type="text/css" href="/static/style2.css" media="screen">
+         <link rel="stylesheet" type="text/css" href="/static/style.css" media="screen">
          <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
          <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
          <!-- Load d3.js -->
         <script src="js/d3/d3.min.js"></script>
+		<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
       </head>
     
 <body>
@@ -36,32 +37,39 @@
 <!-- Create a div where the select menus will take place -->
 <label class="select_men">
 <select id="category_H">
-        <option value="Ethnie">Ethnie</option>
-        <option value="Localisation">Localisation</option>
-        <option value="Etude">Etude</option>
-        <option value="Carrière">Carrière</option>
-        <option value="Objectif">Objectif</option>
+        <option value="race">Race</option>
+        <option value="from">From</option>
+        <option value="field">Field</option>
+        <option value="career">Career</option>
+        <option value="goal">Goal</option>
 </select>
 </label>
 
 <label class="select_women">
 <select id="category_F">
-	<option value="Ethnie">Ethnie</option>
-	<option value="Localisation">Localisation</option>
-	<option value="Etude">Etude</option>
-	<option value="Carrière">Carrière</option>
-	<option value="Objectif">Objectif</option>
+        <option value="race">Race</option>
+        <option value="from">From</option>
+        <option value="field">Field</option>
+        <option value="career">Career</option>
+        <option value="goal">Goal</option>
 </select>
 </label>
 
 <!-- Create a div where the sankey graph will take place -->
-<div id="my_dataviz"></div>
+<table>
+	<tr>
+		<td><div id="radar1"></div></td>
+		<td><div id="sankey"></div></td>
+		<td><div id="radar2"></div></td>	
+	</tr>
+</table>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/sankey.js"></script>
-<script src="js/chart_sankey.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/RadarChart.js"></script>
+<!-- <script src="js/RadarChart3.js"></script> -->
+</div>
 
-<script src="js/radarChart.js"></script>
-<script src="js/data_Radar.js"></script>
 
 </body>
 </html>

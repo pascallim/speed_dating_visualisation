@@ -5,7 +5,7 @@
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
 
-function RadarChart(id, data, options) {
+function RadarChart(div, id, data, options) {
 	var cfg = {
 	 w: 600,				//Width of the circle
 	 h: 600,				//Height of the circle
@@ -51,7 +51,7 @@ function RadarChart(id, data, options) {
 	//d3.select(id).select("svg").remove();
 
 	//Initiate the radar chart SVG
-	var svg = d3.select("#my_dataviz").append("svg")
+	var svg = d3.select("#"+div).append("svg")
 			.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
 			.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
 			.attr("class", "radar"+id);
@@ -143,7 +143,7 @@ function RadarChart(id, data, options) {
 		.angle(function(d,i) {	return i*angleSlice; });
 
 	if(cfg.roundStrokes) {
-		//radarLine.curve("cardinal-closed");
+		radarLine.curve(d3.curveCardinalClosed)
 	}
 
 	//Create a wrapper for the blobs
