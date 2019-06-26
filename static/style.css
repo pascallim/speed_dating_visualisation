@@ -42,12 +42,13 @@ hr#one {
 
 /* Icon man  & woman */
 .men {
-padding-left : 7%;
-filter: brightness(0) invert(1);
+	padding-left : 29%;
+	filter: brightness(0) invert(1);
+	text-align:center;
 }
 
 .women {
-  padding-left: 29%;
+  padding-left: 33%;
   filter: brightness(0) invert(1);
 }
 
@@ -65,17 +66,16 @@ select {
 }
 
 .select_men {
-  padding-left: 5%;
+  padding-left: 27%;
 }
 
 .select_women {
-  padding-left: 23%;
+  padding-left: 28%;
 }
 
 /* Node */
 div.tooltip_node {	
   top: 50px;	
-  width: 600px;					
   height: 40px;
   padding: 10px;				
   font: 14px tahoma;	
@@ -83,7 +83,7 @@ div.tooltip_node {
   border: 0px;		
   border-radius: 0px;			
   pointer-events: none;
-  padding-left:5%;
+  text-align:center;
   /* fade animation */
   opacity: 0;
   transition: opacity 1s;
@@ -142,7 +142,8 @@ div.tooltip_link {
 @import url(https://fonts.googleapis.com/css?family=Megrim);
 
 div.radar_class {
-  width: 400px;
+  width: 450px;
+  /* height: 1000px; */
   /* margin: auto; */
   text-align: center;
   /* padding-left:5%; */

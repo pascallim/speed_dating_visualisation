@@ -644,16 +644,17 @@ function constructSankey (attribute_H, attribute_F){
 
 
 //====================================================== RADAR CHART ===============================
-var margin_radar = {top: 20, right: 20, bottom: 20, left: 20},
-  width_radar = 300,
-  height_radar = 300;
+var margin = {top: 70, right: 70, bottom: 70, left: 70},
+				width = Math.min(440, window.innerWidth - 10) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 
 var color = d3.scaleOrdinal().range(["#EDC951","#CC333F","#00A0B0"]);
+console.log(width)
 
 var radarChartOptions = {
-  w: width_radar,
-  h: height_radar,
-  margin: margin_radar,
+  w: width,
+  h: height,
+  margin: margin,
   maxValue: 0.5,
   levels: 5,
   roundStrokes: true,
