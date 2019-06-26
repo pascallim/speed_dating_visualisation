@@ -278,12 +278,24 @@ var dico_field = {1: "Law",
 			18:"Other"};
 var dico_global = {"race": dico_race, "goal": dico_goal, "field_cd": dico_field, "from": dico_from, "career_c": dico_career};
 var dico_name = {"Race": "race", "From": "from", "Field": "field_cd", "Career": "career_c", "Goal": "goal"}
+// Reverse dicts
+function swap(json){
+  var ret = {};
+  for(var key in json){
+    ret[json[key]] = key;
+  }
+  return ret;
+}
+reverse_dico_from = swap(dico_from)
+reverse_dico_race = swap(dico_race)
+reverse_dico_career = swap(dico_career)
+reverse_dico_goal = swap(dico_goal)
+reverse_dico_field = swap(dico_field);
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
 	width = 600 - margin.left - margin.right,
 	height = 650 - margin.top - margin.bottom;
-
 
 // append the svg object to the body of the page
 var svg_sankey = d3.select("#sankey").append("svg")
@@ -312,10 +324,18 @@ var div_node = d3.select("body").append("div")
 	.style("opacity", 0);
 
 // For First Construction
+var click_H = "";
+var click_F = "";
+var node_click_H = "";
+var node_click_F = "";
 var e_H = document.getElementById("category_H");
 var e_F = document.getElementById("category_F");
 var selectedCategory_H = e_H.options[e_H.selectedIndex].text;
 var selectedCategory_F = e_F.options[e_F.selectedIndex].text;	
+var dico_code_to_node_H = {};
+var dico_code_to_node_F = {};
+var reverse_dico_code_to_node_H = {};
+var reverse_dico_code_to_node_F = {};
 	
 // Construct Sankey
 constructSankey (dico_name[selectedCategory_H], dico_name[selectedCategory_F])
@@ -325,22 +345,25 @@ $( "select" )
   .change(function () {
 	var selectedCategory_H = e_H.options[e_H.selectedIndex].text;
 	var selectedCategory_F = e_F.options[e_F.selectedIndex].text;
+	console.log(d3.selectAll(".node").filter(function(d) { return d.node == node_click_H}).node);
 	d3.selectAll(".link").remove();
 	d3.selectAll(".node").remove();
 	constructSankey(dico_name[selectedCategory_H], dico_name[selectedCategory_F]);
+	constructRadar();
    });
 	
 // Function to construct Sankey
 function constructSankey (attribute_H, attribute_F){
 	// Variables initialization
+	click_H = "";
+	click_F = "";
+	node_click_H = "";
+	node_click_F = "";
 	var prevCol = "";
 	var prevColR = "";
-	var click_H = "";
-	var click_F = "";
 	var color_click = "rgb(95, 101, 112)";
 	var color_link = "#fff"
-	var node_click_H = "";
-	var node_click_F = "";
+	
 	var node_selected;
 	var graph = {"nodes" : [], "links" : []};
 	
@@ -350,8 +373,8 @@ function constructSankey (attribute_H, attribute_F){
 		// INITIALIZE THE NODES
 		var category_H = attribute_H
 		var category_F = attribute_F
-		var dico_code_to_node_H = {};
-		var dico_code_to_node_F = {};
+		dico_code_to_node_H = {};
+		dico_code_to_node_F = {};
 		var dico_code_to_name_H = dico_global[category_H];
 		var dico_code_to_name_F = dico_global[category_F];
 		// var data_nodes = [];
@@ -367,12 +390,14 @@ function constructSankey (attribute_H, attribute_F){
 		// CREATE NODES FOR MEN
 		data_groupby_H.forEach(function(item, index, array) {
 		  dico_code_to_node_H[item.key] = index;
+		  reverse_dico_code_to_node_H = swap(dico_code_to_node_H)
 		  graph.nodes.push({"node":+index, "name":dico_code_to_name_H[item.key]})
 		  offset = index+1;
 		});
 		// CREATE NODES FOR WOMEN
 		data_groupby_F.forEach(function(item, index, array) {
 		  dico_code_to_node_F[item.key] = index + offset;
+		  reverse_dico_code_to_node_F = swap(dico_code_to_node_F)
 		  graph.nodes.push({"node":+index+offset, "name":dico_code_to_name_F[item.key]})
 		});
 		// LINKS
@@ -620,8 +645,8 @@ function constructSankey (attribute_H, attribute_F){
 
 //====================================================== RADAR CHART ===============================
 var margin_radar = {top: 20, right: 20, bottom: 20, left: 20},
-  width_radar = 400,
-  height_radar = 400;	
+  width_radar = 300,
+  height_radar = 300;
 
 var color = d3.scaleOrdinal().range(["#EDC951","#CC333F","#00A0B0"]);
 
@@ -635,36 +660,48 @@ var radarChartOptions = {
   color: color
 };
 
+var empty_data = [{"axis": "Attractive","value": 0},{"axis": "Sincere","value": 0},{"axis": "Intelligent","value": 0},{"axis": "Fun","value": 0},{"axis": "Ambitious","value": 0}];
+var radar_chart1;
+var radar_chart2;
 
-d3.json("data/race_race.json", function(data_radar) {
-	var radar_keys = Object.keys(data_radar)
-	var radar1 = data_radar[radar_keys[0]]
-	var expected = radar1[Object.keys(radar1)[0]]
-	var perceive = radar1[Object.keys(radar1)[1]]
-	var ownView = radar1[Object.keys(radar1)[2]]
-	var data = [expected, perceive, ownView]
-	RadarChart("radar1", "1", data, radarChartOptions);
+// Initialize Radar Charts
+var expected = empty_data;
+var perceive = empty_data;
+var ownView = empty_data;
+var data = [expected, perceive, ownView];
+radar_chart1 = RadarChart("radar1", "1", data, radarChartOptions);
+radar_chart2 = RadarChart("radar2", "2", data, radarChartOptions);
+
+// Modify Sankey
+svg_sankey.on("click", function () {
+	constructRadar();
 });
 
 
-d3.json("data/race_race.json", function(data_radar) {
-    var radar_keys = Object.keys(data_radar)
-    var radar1 = data_radar[radar_keys[0]]
-    var expected = radar1[Object.keys(radar1)[0]]
-    var perceive = radar1[Object.keys(radar1)[1]]
-    var ownView = radar1[Object.keys(radar1)[2]]
-    var data = [expected, perceive, ownView]
-    RadarChart("radar2", "2", data, radarChartOptions);
-});
-
-
-function constructRadar(selectedCategory_H, selectedCategory_F, selectedGroupe_H, selectedGroupe_F){
-	var category_key = str.concat(selectedCategory_H, '_', selectedCategory_F)
-	var group_key = str.concat(selectedGroupe_H, '_', selectedGroupe_F)
-	var expected = radar1[Object.keys(radar1)[0]]
-	var perceive = radar1[Object.keys(radar1)[1]]
-	var ownView = radar1[Object.keys(radar1)[2]]
-
-	var data = [expected, perceive, ownView]
-	RadarChart(".radarChart", data, radarChartOptions);
+function constructRadar(){
+	if (click_F == 1 && click_H == 1) {
+		d3.selectAll(".radar").remove()
+		var selectedCategory_H = e_H.options[e_H.selectedIndex].text;
+		var selectedCategory_F = e_F.options[e_F.selectedIndex].text;
+		d3.json("data/data_radar.json", function(data_radar) {
+			// 1st RadarChart - Source
+			var comparison = dico_name[selectedCategory_H] + "_" + dico_name[selectedCategory_F]
+			var dico_category = data_radar[comparison]
+			var data = dico_category[reverse_dico_code_to_node_H[node_click_H]+"_"+reverse_dico_code_to_node_F[node_click_F]]["source"]
+			data = [data["expected"], data["perceive"], data["ownView"]]
+			RadarChart("radar1", "1", data, radarChartOptions);
+			// 2nd RadarChart - Target
+			data = dico_category[reverse_dico_code_to_node_H[node_click_H]+"_"+reverse_dico_code_to_node_F[node_click_F]]["target"]
+			data = [data["expected"], data["perceive"], data["ownView"]]
+			RadarChart("radar2", "2", data, radarChartOptions);
+		});
+	} else {
+		d3.selectAll(".radar").remove()
+		var expected = empty_data
+		var perceive = empty_data
+		var ownView = empty_data
+		var data = [expected, perceive, ownView]
+		RadarChart("radar1", "1", data, radarChartOptions)
+		RadarChart("radar2", "2", data, radarChartOptions);
+	}
 }

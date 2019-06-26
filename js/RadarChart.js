@@ -54,7 +54,7 @@ function RadarChart(div, id, data, options) {
 	var svg = d3.select("#"+div).append("svg")
 			.attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
 			.attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
-			.attr("class", "radar"+id);
+			.attr("class", "radar");
 	//Append a g element
 	var g = svg.append("g")
 			.attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top) + ")");

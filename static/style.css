@@ -106,9 +106,9 @@ div.tooltip_link {
   transition: opacity 1s;
 }
 
-svg {
-padding-left:4%;
-}
+/* svg { */
+/* padding-left:4%; */
+/* } */
 
 .link {
   fill: none;
@@ -130,9 +130,7 @@ padding-left:4%;
 	border-radius: 50px;	
 }
 
-.radar2 {
-padding-left : 20%;
-}
+
 
 @font-face{
   font-family: Geosans;
@@ -143,3 +141,10 @@ padding-left : 20%;
 
 @import url(https://fonts.googleapis.com/css?family=Megrim);
 
+div.radar_class {
+  width: 400px;
+  /* margin: auto; */
+  text-align: center;
+  /* padding-left:5%; */
+	
+}
