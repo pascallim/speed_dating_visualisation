@@ -3,4 +3,4 @@ Repository for the final project for the IGR204 class (MS BGD 2018 - 2019 Télec
 
 Authors : Pascal Lim, Céline Nguyen, Stéphane Peillet, Valentin Phetchanpheng, Jean-Nicolas Vizy
 
-To start the application, clone the whole repo and run the `speed_dating.py` file in your local terminal. It should open a local port where you can check our project. 
+To start the application, clone the whole repo and run a webserver (python -m http.server <port number>). It should open a local port where you can check our project. 
